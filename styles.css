@@ -1,7 +1,25 @@
 body {
-    background-color: rgb(246, 210, 201);
+    background-color: #f0fb43;
     color: #211e1e;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 30px;
+}
+
+h1 {
+    font-family: courier;
+    text-align: center;
+    background: #83cd48;
+    padding: 20px;
+    font-size: 2.5em;
+    border: 6px groove #56b436;
+    border-radius: 12px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    
 }
 
 p {
@@ -11,9 +29,19 @@ p {
 img {
     width:300px;
     height:200px;
-    float:left;
+    float:right;
     border:solid 3px #fe0000;
     border-radius:9px;
-    margin-right:15px;
+    margin-left:15px;
     margin-bottom:4px;
+}
+
+#midpic {
+    float:left;
+    margin-left:0px;
+    margin-right:15px;
+}
+
+.link {
+    background:yellow;
 }
