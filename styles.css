@@ -1,6 +1,5 @@
 body {
-    background-color: #afd1e9;
-    color: #211e1e;
+    background: #d9e7cd;
     font-family: Arial, Helvetica, sans-serif;
     padding:0px;
     margin:0px;
@@ -8,15 +7,16 @@ body {
 
 #container {
     width:1000px;
-    background-color: #f0fb43;
+    background: #a4dc76;
     padding:30px;
     margin: 0 auto;
+    margin-top:20px;
     border-radius:30px;
 }
 
 h1 {
     font-family: courier;
-    text-align: center;
+    text-align: left;
     background: #83cd48;
     padding: 20px;
     font-size: 2.5em;
@@ -25,6 +25,7 @@ h1 {
     width: auto;
     margin-left: auto;
     margin-right: auto;
+    margin-top:0px;
 }
 
 h2 {
@@ -42,7 +43,7 @@ img {
     width:300px;
     height:200px;
     float:right;
-    border:solid 3px #fe0000;
+    border:solid 3px #c8cd2e;
     border-radius:9px;
     margin-left:15px;
     margin-bottom:4px;
@@ -50,7 +51,7 @@ img {
 
 img:hover{
     border-color:#ffd550;
-    box-shadow: .5px .5px 15px blue;
+    box-shadow: .5px .5px 15px rgb(57, 108, 169);
 }
 
 #midpic {
@@ -60,7 +61,7 @@ img:hover{
 }
 
 .highlight {
-    background-color:red;
+    background-color:rgb(174, 255, 0);
     font-weight:bold;
     color:#000000;
     padding-left: 4px;
@@ -87,7 +88,7 @@ a:active {
 }
 
 #sidebar {
-    background-color:rebeccapurple;
+    background-color:#afd1e9;
     border:solid white 3px;
     border-radius:15px;
     width:150px;
