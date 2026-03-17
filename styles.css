@@ -6,12 +6,18 @@ body {
 }
 
 #container {
-    width:1000px;
+    width:auto;
     background: #a4dc76;
     padding:30px;
-    margin: 0 auto;
-    margin-top:20px;
-    border-radius:30px;
+    margin-bottom:20px;
+}
+
+#space {
+    padding:45px;
+}
+
+#leaf {
+    
 }
 
 h1 {
@@ -21,11 +27,9 @@ h1 {
     padding: 20px;
     font-size: 2.5em;
     border: 6px groove #56b436;
-    border-radius: 12px;
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
+    width: 96%;
     margin-top:0px;
+    position:fixed;
 }
 
 h2 {
