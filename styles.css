@@ -220,6 +220,127 @@ label[for="tab3"] {
     border-color: #56b436;
 }
 
+#footer-box {
+    background: linear-gradient(90deg, #56c596, #34a0a4); 
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 15px;
+    font-size: 1.5em;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    height:30px;
+
+    /* Make text move continuously */
+    overflow: hidden;
+    position: relative;
+}
+
+#footer-box span {
+    display: inline-block;
+    white-space: nowrap;
+    position: absolute;
+    animation: moveText 5s linear infinite, bounceShadow 1s ease-in-out infinite;
+}
+
+/* Collapsible Timeline Styles */
+.timeline-container {
+  margin-top: 15px;
+}
+
+/* Timeline label */
+.timeline-label {
+  display: inline-block;
+  cursor: pointer;
+  font-weight: bold;
+  color: #004d40;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+/* Add arrow using ::before */
+.timeline-label::before {
+  content: "►"; /* arrow when closed */
+  margin-right: 8px;
+  font-weight: normal;
+  transition: transform 0.2s ease;
+}
+
+/* Change the arrow when checkbox is checked */
+#timeline-toggle:checked + .timeline-label::before {
+  content: "▼"; /* arrow when open */
+}
+
+/* Arrow rotation when checked */
+#timeline-toggle:checked + .timeline-label {
+  transform: none;
+}
+
+/* Hide the actual checkbox */
+#timeline-toggle {
+  display: none;
+}
+
+/* Collapsible content */
+.timeline-content-collapsible {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+/* Show when checked */
+#timeline-toggle:checked ~ .timeline-content-collapsible {
+  max-height: 500px; /* enough to show full timeline */
+}
+
+/* Timeline styles (from before) */
+.timeline {
+  position: relative;
+  margin-left: 20px;
+  border-left: 3px solid #004d40;
+  padding-left: 20px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.timeline-dot {
+  width: 14px;
+  height: 14px;
+  background-color: #004d40;
+  border-radius: 50%;
+  position: absolute;
+  left: -10px;
+  top: 4px;
+}
+
+.timeline-content {
+  background-color: rgba(255,255,255,0.2);
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 0.95em;
+}
+
+@keyframes moveText {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: -100%;
+    }
+}
+
+@keyframes bounceShadow {
+    0%, 100% { text-shadow: 0 0 0 #ffffff; }
+    50% { text-shadow: 2px 2px 8px #ffffff; }
+}
+
+
+
 @keyframes fadeIn {
     from {opacity:0; transform:translateY(6px);}
     to {opacity:1; transform:translateY(0);}
